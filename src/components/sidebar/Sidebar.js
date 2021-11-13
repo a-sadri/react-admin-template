@@ -3,9 +3,9 @@ import logo from '../../assets/logo.png';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
-    <div className={sidebarOpen ? 'sidebar-responsive' : ''} id='sidebar'>
+    <div className={sidebarOpen ? 'sidebar_responsive' : ''} id='sidebar'>
       <div className='sidebar__title'>
-        <div className='sidebar__image'>
+        <div className='sidebar__img'>
           <img src={logo} alt='logo' />
           <h1>Admin React</h1>
           <i
@@ -16,7 +16,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         </div>
       </div>
       <div className='sidebar__menu'>
-        <div className='sidebar__link active-menu-link'>
+        <div className='sidebar__link active_menu_link'>
           <i className='fa fa-home'></i>
           <a href='#'>Dashboard</a>
         </div>
