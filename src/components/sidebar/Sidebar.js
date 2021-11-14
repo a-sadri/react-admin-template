@@ -8,13 +8,15 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <div className='sidebar__img'>
           <img src={logo} alt='logo' />
           <h1>Admin React</h1>
-          <i
-            className='fa fa-times'
-            id='sidebarIcon'
-            onClick={() => closeSidebar()}
-          ></i>
         </div>
+        <i
+          className='fa fa-times'
+          id='sidebarIcon'
+          onClick={() => closeSidebar()}
+          aria-hidden='true'
+        ></i>
       </div>
+
       <div className='sidebar__menu'>
         <div className='sidebar__link active_menu_link'>
           <i className='fa fa-home'></i>
