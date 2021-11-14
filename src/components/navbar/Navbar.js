@@ -3,7 +3,7 @@ import avatar from '../../assets/avatar.svg';
 
 import React from 'react';
 
-const Navbar = ({ sidebarOpen, openSidebar }) => {
+const Navbar = ({ sidebarOpen, openSidebar, closeSidebar }) => {
   return (
     <div className='navbar'>
       <div className='nav_icon' onClick={() => openSidebar()}>
@@ -16,7 +16,7 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
           admin
         </a>
       </div>
-      <div className='navbar__right'>
+      <div className='navbar__right' onClick={() => closeSidebar()}>
         <a href=''>
           <i class='fas fa-search'></i>
         </a>

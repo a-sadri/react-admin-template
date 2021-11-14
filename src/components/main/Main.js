@@ -2,9 +2,9 @@ import './main.css';
 import hello from '../../assets/hello.svg';
 import Chart from '../charts/Chart';
 
-const Main = () => {
+const Main = ({ closeSidebar }) => {
   return (
-    <main>
+    <main onClick={() => closeSidebar()}>
       <div className='main__container'>
         <div className='main__title'>
           <img src={hello} alt='hello' />
