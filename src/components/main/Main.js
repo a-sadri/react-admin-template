@@ -2,9 +2,9 @@ import './main.css';
 import hello from '../../assets/hello.svg';
 import Chart from '../charts/Chart';
 
-const Main = ({ closeSidebar }) => {
+const Main = () => {
   return (
-    <main onClick={() => closeSidebar()}>
+    <main>
       <div className='main__container'>
         <div className='main__title'>
           <img src={hello} alt='hello' />
@@ -55,7 +55,7 @@ const Main = ({ closeSidebar }) => {
                 <h1>daily reports</h1>
                 <p>cupertino</p>
               </div>
-              <i class='fas fa-dollar-sign'></i>
+              <i className='fas fa-dollar-sign'></i>
             </div>
             <Chart />
           </div>
@@ -66,7 +66,7 @@ const Main = ({ closeSidebar }) => {
                 <h1>status reports</h1>
                 <p>cupertino</p>
               </div>
-              <i class='fas fa-dollar-sign'></i>
+              <i className='fas fa-dollar-sign'></i>
             </div>
 
             <div className='charts__right__cards'>

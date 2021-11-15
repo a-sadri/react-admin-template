@@ -3,7 +3,10 @@ import logo from '../../assets/logo.png';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
-    <div className={sidebarOpen ? 'sidebar_responsive' : ''} id='sidebar'>
+    <div id='sidebar' className={sidebarOpen ? 'sidebar_responsive' : ''}>
+      {sidebarOpen && (
+        <div className='overlay' onClick={() => closeSidebar()}></div>
+      )}
       <div className='sidebar__title'>
         <div className='sidebar__img'>
           <img src={logo} alt='logo' />
